@@ -1,4 +1,5 @@
-import express, { Request, Response } from 'express'
+import express from 'express'
+import router from './routes'
 
 export function createApp() {
 
@@ -6,9 +7,7 @@ export function createApp() {
   
   app.use(express.json())
   
-  app.get('/',(req:Request,res:Response)=>{
-    res.status(200).send({player: "backham"})
-  })
+  app.use('/api',router)
 
   return app
 }
