@@ -44,3 +44,5 @@ Content-Type: application/json
     "Physical": 72
 }
 ###
+
+GET {{url}}/clubs

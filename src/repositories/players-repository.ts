@@ -1,6 +1,6 @@
 import { PlayerModel } from '../model/player-model';
 import { StatisticModel } from '../model/statistic-model';
-import { database } from '../services/database';
+import { database } from './database';
 
 
 
