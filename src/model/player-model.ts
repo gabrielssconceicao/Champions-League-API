@@ -12,5 +12,5 @@ export interface PlayerModel {
     Dribbling: number;
     Defending: number;
     Physical: number;
-   };
+  };
 }

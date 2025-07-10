@@ -2,5 +2,28 @@
 
 ###
 
-# find all players #
-GET {{url}}
+# Find all players #
+GET {{url}}/players
+###
+# Get player by id #
+GET {{url}}/players/1
+###
+# Create player #
+POST  {{url}}/players
+Content-Type: application/json
+
+{
+  "name": "Bob",
+  "club": "futebol Clube",
+  "nationality": "Brasil",
+  "position": "Atacante",
+  "statistics": { 
+    "Overall": 99,
+    "Pace": 79,
+    "Shooting": 60,
+    "Passing": 35,
+    "Dribbling": 60,
+    "Defending": 56,
+    "Physical": 72
+  }
+}

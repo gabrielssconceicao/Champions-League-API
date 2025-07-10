@@ -7,9 +7,25 @@ export const ok = async (data: any): Promise<HttpResponse>=>{
   }
 }
 
+export const created = async (): Promise<HttpResponse>=>{
+  return {
+    body: {
+      message: 'Player created successfully',
+    },
+    statusCode: 201
+  }
+}
+
 export const noContent = async (): Promise<HttpResponse>=>{
   return {
     body: null,
     statusCode: 204
+  }
+}
+
+export const badRequest = async (): Promise<HttpResponse>=>{
+  return {
+    body: null,
+    statusCode: 400
   }
 }
