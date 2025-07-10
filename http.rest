@@ -7,6 +7,8 @@ GET {{url}}/players
 ###
 # Get player by id #
 GET {{url}}/players/1
+# Delete player by id #
+DELETE {{url}}/players/1
 ###
 # Create player #
 POST  {{url}}/players
@@ -27,3 +29,18 @@ Content-Type: application/json
     "Physical": 72
   }
 }
+###
+# Update Player
+PATCH   {{url}}/players/16
+Content-Type: application/json
+
+{
+    "Overall": 919,
+    "Pace": 79,
+    "Shooting": 60,
+    "Passing": 35,
+    "Dribbling": 60,
+    "Defending": 56,
+    "Physical": 72
+}
+###
